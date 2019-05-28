@@ -1,0 +1,29 @@
+.navBar {
+    background: #4240CC;
+    margin-bottom: .75rem;
+}
+
+.navLink {
+    display: inline-block;
+
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+
+    margin-top: .75rem;
+    margin-bottom: .75rem;
+
+    border-radius: 500px;
+
+    color: white;
+    text-decoration: none;
+    transition: background .2s ease, color .2s ease;
+}
+
+.navLink:hover,
+.navLink:focus {
+    background: #DFD9F5;
+    color: #4240CC;
+}
+
