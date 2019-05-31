@@ -1,9 +1,9 @@
 import React from "react"
 import { graphql } from "gatsby"
-import { Link } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import Teaser from "../components/teaser"
 
 const Notes = ({ data }) => (
   <Layout>
@@ -11,12 +11,7 @@ const Notes = ({ data }) => (
     <h1>Notes</h1>
 
     { data.allNodeNote.edges.map(({ node }, index) => (
-          <atricle>
-            <Link to={ node.path.alias }><h2>{ node.title }</h2></Link>
-            <p>
-              { node.body.value }
-            </p>
-          </atricle>
+        <Teaser data={ node }/>
       ))}
   </Layout>
 )
@@ -37,6 +32,17 @@ export const query = graphql`
             format
             processed
             summary
+          }
+          relationships {
+            field_image {
+              localFile {
+                childImageSharp {
+                  fluid(maxWidth: 150, maxHeight: 150) {
+                    ...GatsbyImageSharpFluid
+                  }
+                }
+              }
+            }
           }
         }
       }
