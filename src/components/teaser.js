@@ -11,7 +11,7 @@ const Teaser = ({ data }) => (
     <div>
       <Link className={ teaserStyles.teaserLink } to={ data.path.alias }><h2>{ data.title }</h2></Link>
       <p>
-        { data.body.value }
+        { data.body.summary }
       </p>
     </div>
   </article>
