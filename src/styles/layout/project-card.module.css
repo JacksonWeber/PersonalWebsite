@@ -1,0 +1,81 @@
+.cardBox {
+    margin-bottom: 3rem;
+
+    border-radius: 5px;
+
+    background-color: #ffffff;
+}
+
+.cardBox:hover,
+.cardBox:focus {
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
+}
+
+.projectHeader,
+.projectSubheader {
+    display: flex;
+}
+
+.projectHeader h2 {
+    flex-grow: 1;
+
+    margin-left: 2rem;
+}
+
+.projectHeader > div {
+    margin-right: 2rem;
+}
+
+.projectSubheader > div:first-child {
+    flex-grow: 1;
+}
+
+.projectSummary {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projectDescription {
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+}
+
+.projectLink:hover,
+.projectLink:focus {
+    text-decoration: underline;
+}
+
+.projectLink {
+    display:  block;
+
+    margin-left: 2rem;
+    padding-bottom: 2rem;
+    text-decoration: none;
+    color: #000000;
+}
+
+.cardImage {
+    width: 50px;
+
+    margin-left: 2rem;
+
+    margin-top: 1rem;
+}
+
+.projectCollapsible {
+    overflow-y: hidden;
+    transition: max-height .2s ease;
+}
+
+.downArrow {
+    display: block;
+
+    max-height: 1.5em;
+    margin-left: auto;
+    margin-right: 2rem;
+}
+
+.buttonWrapper {
+    margin-left: 2rem;
+    margin-bottom: 2rem;
+}

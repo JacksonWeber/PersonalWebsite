@@ -1,7 +1,8 @@
 import { Link } from "gatsby"
 import React from "react"
-import teaserStyles from "../styles/layout/notes-teaser.module.css"
 import Img from "gatsby-image"
+
+import teaserStyles from "../styles/layout/notes-teaser.module.css"
 
 const Teaser = ({ data }) => (
   <article className={ teaserStyles.teaserBox }>

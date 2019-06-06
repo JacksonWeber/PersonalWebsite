@@ -3,25 +3,16 @@ import { graphql } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectCard from "../components/projectCard"
 
 const Projects = ({ data }) => (
 <Layout>
-  <SEO title="Notes" />
+  <SEO title="Projects" />
   <h1>Projects</h1>
 
-  { data.allNodeProject.edges.map(({ node }, { relationships }, index) => (
-    <atricle>
-      <h2>
-        { node.title }
-      </h2>
-      <p>
-        { node.relationships.field_languages[0].name }
-      </p>
-      <p>
-        { node.body.value }
-      </p>
-    </atricle>
-  ))}
+  { data.allNodeProject.edges.map(({ node }, index) => (
+        <ProjectCard data={ node }/>
+      ))}
 </Layout>
 )
 
@@ -33,6 +24,10 @@ export const query = graphql`
       edges {
         node {
           title
+          field_link {
+            uri
+            title
+          }
           body {
             value
             format
@@ -42,6 +37,17 @@ export const query = graphql`
           relationships {
             field_languages {
               name
+              relationships {
+                field_image {
+                  localFile {
+                    childImageSharp {
+                      fluid(maxWidth: 150, maxHeight: 150) {
+                        ...GatsbyImageSharpFluid
+                      }
+                    }
+                  }
+                }
+              }
             }
           }
         }

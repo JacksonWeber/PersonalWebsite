@@ -1,0 +1,19 @@
+.buttonStyle {
+    display: inline-block;
+
+    border-radius: 5px;
+    padding: 0.5rem;
+
+    background-color: #649E71;
+
+    text-decoration: none;
+    color: white;
+
+}
+
+.buttonStyle:hover,
+.buttonStyle:focus {
+    color: #649E71;
+    background-color: #dfdfdf;
+    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
+}
