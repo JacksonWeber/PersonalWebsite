@@ -14,10 +14,10 @@ const Contact = () => (
       <input type={"hidden"} name={"form-name"} value={"contact"}/>
 
       <div>
-        <input placeholder={"Email"} className={ contactStyles.email } type="email" name="email" />
+        <input required placeholder={"Email"} className={ contactStyles.email } type="email" name="email" />
       </div>
       <div>
-        <textarea placeholder={"Message"} className={ contactStyles.message } name="message"/>
+        <textarea required placeholder={"Message"} className={ contactStyles.message } name="message"/>
       </div>
       <div>
         <button className={ contactStyles.buttonStyle + " " + buttonStyles.buttonStyle } type="submit">Send</button>
