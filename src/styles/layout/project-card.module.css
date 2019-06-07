@@ -16,6 +16,18 @@
     display: flex;
 }
 
+.projectHeader {
+    flex-direction: column-reverse;
+}
+
+@media (min-width: 480px) {
+    .projectHeader,
+    .projectSubheader {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
 .projectHeader h2 {
     flex-grow: 1;
 
