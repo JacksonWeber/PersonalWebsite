@@ -9,8 +9,6 @@
 }
 
 .teaserBox {
-    display:flex;
-
     margin-bottom: 3rem;
 
     border-radius: 5px;
@@ -23,8 +21,30 @@
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
 }
 
-.teaserImage {
-    width: 150px;
+.teaserContent {
+    padding: 1rem;
+}
 
-    margin-right: 2rem;
+.teaserImageWrapper {
+    width: 100%
+}
+
+@media (min-width: 530px) {
+    .teaserBox {
+        display: flex;
+    }
+
+    .teaserContent {
+        padding: 0;
+    }
+
+    .teaserImageWrapper {
+        width: inherit;
+    }
+
+    .teaserImage {
+        width: 150px;
+
+        margin-right: 2rem;
+    }
 }

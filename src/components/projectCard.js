@@ -55,7 +55,7 @@ class ProjectCard extends React.Component {
           <div className={ cardStyles.projectSummary }>
             { data.body.summary }
           </div>
-          <Icon className={ cardStyles.downArrow } path={ this.state.icon }/>
+          <Icon className={ cardStyles.downArrow } size={"1.5rem"} path={ this.state.icon }/>
         </div>
 
         <div style={ this.state.detailCSS } className={ cardStyles.projectCollapsible }>
