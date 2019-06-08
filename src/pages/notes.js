@@ -20,13 +20,14 @@ export default Notes
 
 export const query = graphql`  
   query {
-    allNodeNote {
+    allNodeNote (sort: { fields: [created], order: DESC }){
       edges {
         node {
           path {
             alias
           }
           title
+            created(formatString: "DD MMMM, YYYY")
           body {
             value
             format
