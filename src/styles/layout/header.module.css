@@ -53,10 +53,6 @@
     flex-grow: 1;
 }
 
-/**
- * This defines behavior on desktop viewing.
- * 500px is used here such that the Contacts link will not collapse before changing views.
- */
 @media (min-width: 530px) {
     .navBar > div {
         display: flex;
