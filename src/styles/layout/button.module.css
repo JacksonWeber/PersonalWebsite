@@ -16,3 +16,19 @@
     background-color: #dfdfdf;
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
 }
+
+.buttonStyle svg path {
+    fill: white;
+}
+
+.buttonStyle:hover svg path {
+    fill: #649E71;
+}
+
+.buttonStyle svg {
+    position: relative;
+
+    top: 2px;
+
+    padding-right: 1.5rem;
+}

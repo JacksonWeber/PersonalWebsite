@@ -11,7 +11,7 @@ const Layout = ({ children }) => (
     <Container>
       <main>{ children }</main>
       <footer>
-        © {new Date().getFullYear()} Jackson Weber
+        © { new Date().getFullYear() } Jackson Weber
       </footer>
     </Container>
   </div>

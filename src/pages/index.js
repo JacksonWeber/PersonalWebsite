@@ -1,12 +1,14 @@
 import React from "react"
 
-import Layout from "../components/layout"
+import ContainerlessLayout from "../components/layoutContainerless"
 import SEO from "../components/seo"
+import Hero from "../components/homepageHero"
 
 const IndexPage = () => (
-  <Layout>
+  <ContainerlessLayout>
     <SEO title="Home" />
-  </Layout>
+    <Hero/>
+  </ContainerlessLayout>
 )
 
 export default IndexPage
