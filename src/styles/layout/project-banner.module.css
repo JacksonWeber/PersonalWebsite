@@ -1,0 +1,10 @@
+.banner {
+    padding-top: 2rem;
+    min-height: 250px;
+    background-color: #F2F2F2;
+}
+
+.text {
+    flex-grow: 1;
+    text-align: center;
+}

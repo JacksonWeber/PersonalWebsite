@@ -12,7 +12,7 @@ const Hero = () => (
   <div className={ heroStyles.hero }>
     <Container>
       <div className={ heroStyles.buttonGroup }>
-        <h3>See Projects and Information</h3>
+        <h3>See Portfolio and Information</h3>
         <div className={ heroStyles.spacer }/>
         <Button href="https://github.com/JacksonWeber" target={"_blank"}>
           <Icon path={ mdiGithubCircle } size={"1rem"}/>
