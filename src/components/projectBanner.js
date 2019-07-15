@@ -14,7 +14,7 @@ const Banner = ({ data }) => (
         data.map(({ node }, index) => {
           // Displays two most recent project banners.
           if (index > 1) {
-            return;
+            return (<></>);
           }
 
           return (

@@ -3,9 +3,6 @@ import React from "react"
 import ideStyles from "../styles/layout/ide-hero.module.css"
 
 class IDEHero extends React.Component {
-  constructor() {
-    super();
-  }
 
   render() {
     return (

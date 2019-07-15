@@ -1,0 +1,20 @@
+.icon svg {
+    margin-right: 1.3rem;
+}
+
+.icon svg path {
+    fill: #649E71;
+}
+
+.icon:hover svg path {
+    fill: #4A4A4A;
+}
+
+.footerGroup {
+    display: flex;
+    flex-direction: row;
+}
+
+.spacer {
+    flex-grow: 1;
+}

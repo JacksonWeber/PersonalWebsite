@@ -12,17 +12,17 @@ const Hero = () => (
   <div className={ heroStyles.hero }>
     <Container>
       <div className={ heroStyles.buttonGroup }>
-        <h3>See Portfolio and Information</h3>
+        <h3>See Some of My Other Work</h3>
         <div className={ heroStyles.spacer }/>
-        <Button href="https://github.com/JacksonWeber" target={"_blank"}>
-          <Icon path={ mdiGithubCircle } size={"1rem"}/>
-          Github
-        </Button>
-        <Button href="https://www.linkedin.com/in/jackson-weber" target={"_blank"}>
-          <Icon path={ mdiLinkedinBox } size={"1rem"}/>
-          LinkedIn
-        </Button>
-      </div>
+          <Button href="https://github.com/JacksonWeber" target={"_blank"}>
+            <Icon path={ mdiGithubCircle } size={"1rem"}/>
+            Github
+          </Button>
+          <Button href="https://www.linkedin.com/in/jackson-weber" target={"_blank"}>
+            <Icon path={ mdiLinkedinBox } size={"1rem"}/>
+            LinkedIn
+          </Button>
+        </div>
       <div>
         <IDEHero/>
       </div>
