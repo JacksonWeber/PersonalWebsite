@@ -3,11 +3,11 @@
 }
 
 .icon svg path {
-    fill: #649E71;
+    fill: black;
 }
 
 .icon:hover svg path {
-    fill: #4A4A4A;
+    fill: #626A73;
 }
 
 .footerGroup {

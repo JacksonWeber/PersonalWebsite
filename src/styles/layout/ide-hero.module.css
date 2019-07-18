@@ -14,9 +14,7 @@
     font-size: 0.9em;
 }
 
-
 .window span {
-    color: white;
     font-family: 'IBM Plex Mono', monospace;
 }
 
@@ -43,8 +41,6 @@
 
     padding-bottom: .5rem;
 }
-
-
 
 .closeButton,
 .minimizeButton,
@@ -74,7 +70,6 @@
     padding-bottom: .25rem;
     color: #61646B;
 }
-
 
 @media (min-width: 480px) {
     .window * {
