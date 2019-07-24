@@ -1,0 +1,15 @@
+.row {
+    display: flex;
+}
+
+.row > div {
+    flex-basis: 100%
+}
+
+.isHalf {
+    display: flex;
+}
+
+.isThird {
+    display: flex;
+}

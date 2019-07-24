@@ -18,7 +18,7 @@ export default IndexPage
 
 export const query = graphql`
   query {
-    allNodeProject (sort: { fields: [created], order: DESC }){
+    allNodeProject (limit:2, sort: { fields: [created], order: DESC }){
       edges {
         node {
           title
