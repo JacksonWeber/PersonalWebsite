@@ -1,9 +1,15 @@
 .cardBox {
+    display: inline-flex;
+    flex-direction: column;
+
+    width: 45%;
+    margin-right: 1rem;
     margin-bottom: 3rem;
 
     border-radius: 5px;
 
     background-color: #ffffff;
+
 }
 
 .cardBox:hover,
@@ -66,22 +72,15 @@
     margin-top: 1rem;
 }
 
-.projectCollapsible {
-    overflow-y: hidden;
-    transition: max-height .2s ease;
-}
 
-.downArrow {
-    display: block;
-
-    max-height: 1.5em;
-    margin-left: auto;
-    margin-right: 2rem;
-}
 
 .buttonWrapper {
     margin-left: 2rem;
     margin-bottom: 2rem;
+}
+
+.spacer {
+    flex-grow: 1;
 }
 
 @media (min-width: 480px) {

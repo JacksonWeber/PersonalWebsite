@@ -4,15 +4,18 @@ import { graphql } from "gatsby"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
+import projectsStyles from "../styles/layout/projects.module.css"
 
 const Projects = ({ data }) => (
 <Layout>
   <SEO title="Projects" />
   <h1>Projects</h1>
 
-  { data.allNodeProject.edges.map(({ node }, index) => (
-        <ProjectCard data={ node }/>
-      ))}
+  <div className={ projectsStyles.row }>
+    { data.allNodeProject.edges.map(({ node }, index) => (
+          <ProjectCard data={ node }/>
+        ))}
+  </div>
 </Layout>
 )
 

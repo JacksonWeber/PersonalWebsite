@@ -11,11 +11,11 @@ const Banner = ({ data }) => (
       Projects
       </h3>
       {
-        data.map(({ node }, index) => {
-          // Displays two most recent project banners.
-          if (index > 1) {
-            return (<></>);
-          }
+          data.map(({ node }, index) => {
+            // Displays two most recent projects.
+            if (index > 1) {
+              return (<></>);
+            }
 
           return (
             <ProjectCard data={ node }/>

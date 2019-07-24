@@ -10,7 +10,11 @@ const Teaser = ({ data }) => (
       <Img className={ teaserStyles.teaserImage } fluid={ data.relationships.field_image[0].localFile.childImageSharp.fluid } />
     </div>
     <div className={ teaserStyles.teaserContent }>
-      <Link className={ teaserStyles.teaserLink } to={ data.path.alias }><h2>{ data.title }</h2></Link>
+      <Link className={ teaserStyles.teaserLink } to={ data.path.alias }>
+        <h2>
+          { data.title }
+        </h2>
+      </Link>
       <p>
         { data.body.summary }
       </p>

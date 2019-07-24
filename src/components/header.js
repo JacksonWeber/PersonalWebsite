@@ -6,7 +6,6 @@ import Icon from "@mdi/react"
 import Container from "./container"
 import headerStyles from "../styles/layout/header.module.css"
 
-
 class Header extends React.Component {
   constructor() {
     super();
@@ -34,22 +33,22 @@ class Header extends React.Component {
 
   render() {
     return (
-    <header className={headerStyles.navBar}>
+    <header className={ headerStyles.navBar }>
       <Container>
         <div className={ headerStyles.branding }>
-          <Link className={headerStyles.navLink} activeClassName={headerStyles.activeNavLink} to="/"> Jackson
+          <Link className={ headerStyles.navLink } activeClassName={ headerStyles.activeNavLink } to="/"> Jackson
             Weber </Link>
           <div className={ headerStyles.spacer }/>
-          <Icon className={ headerStyles.menuIcon } onClick={ this.toggleView.bind(this) } size={"1.5rem"} path={ this.state.icon }/>
+          <Icon className={ headerStyles.menuIcon } onClick={ this.toggleView.bind(this) } size={ "1.5rem" } path={ this.state.icon }/>
         </div>
 
-        <div className={ headerStyles.collapsibleMenu} style={this.state.shown ? {"max-height": "500px"} : {"max-height": 0}}>
-          <Link className={headerStyles.navLink} activeClassName={headerStyles.activeNavLink}
-                to={"/notes/"}> Notes </Link>
-          <Link className={headerStyles.navLink} activeClassName={headerStyles.activeNavLink}
-                to={"/projects/"}> Projects </Link>
-          <Link className={headerStyles.navLink} activeClassName={headerStyles.activeNavLink}
-                to={"/contact/"}> Contact </Link>
+        <div className={ headerStyles.collapsibleMenu } style={ this.state.shown ? { "max-height": "500px" } : { "max-height": 0 } }>
+          <Link className={ headerStyles.navLink } activeClassName={ headerStyles.activeNavLink }
+                to={ "/notes/" }> Notes </Link>
+          <Link className={ headerStyles.navLink } activeClassName={ headerStyles.activeNavLink }
+                to={ "/projects/" }> Projects </Link>
+          <Link className={ headerStyles.navLink } activeClassName={ headerStyles.activeNavLink }
+                to={ "/contact/" }> Contact </Link>
         </div>
       </Container>
     </header>

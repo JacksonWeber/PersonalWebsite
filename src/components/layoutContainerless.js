@@ -17,11 +17,11 @@ const ContainerlessLayout = ({ children }) => (
           <div className={ footerStyles.footerGroup }>
             <span className={ footerStyles.spacer }>© { new Date().getFullYear() } Jackson Weber</span>
             <span>
-            <a className={ footerStyles.icon } href="https://github.com/JacksonWeber" target={"_blank"}>
-              <Icon path={ mdiGithubCircle } size={"1.3rem"}/>
+            <a className={ footerStyles.icon } href="https://github.com/JacksonWeber" target={ "_blank" }>
+              <Icon path={ mdiGithubCircle } size={ "1.3rem" }/>
             </a>
-            <a className={ footerStyles.icon } href="https://www.linkedin.com/in/jackson-weber" target={"_blank"}>
-              <Icon path={ mdiLinkedinBox } size={"1.3rem"}/>
+            <a className={ footerStyles.icon } href="https://www.linkedin.com/in/jackson-weber" target={ "_blank" }>
+              <Icon path={ mdiLinkedinBox } size={ "1.3rem" }/>
             </a>
           </span>
           </div>
