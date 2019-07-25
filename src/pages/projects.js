@@ -11,7 +11,7 @@ const Projects = ({ data }) => (
   <SEO title="Projects" />
   <h1>Projects</h1>
 
-  <RowsByColumns columns={3}
+  <RowsByColumns columns={2}
                  data={ data.allNodeProject.edges }
                  render={ data => <ProjectCard node={ data.node }/> }/>
 </Layout>

@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
 
-    margin-right: 1rem;
     margin-bottom: 3rem;
 
     border-radius: 5px;
 
     background-color: #ffffff;
 
+    width: 100%;
 }
 
 .cardBox:hover,
@@ -46,6 +46,7 @@
 
 .projectDescription {
     margin-left: 2rem;
+    margin-right: 2rem;
     padding-bottom: 2rem;
 }
 
@@ -87,5 +88,11 @@
     .projectSubheader {
         display: flex;
         flex-direction: row;
+    }
+}
+
+@media (min-width: 850px) {
+    .cardBox {
+        margin-right: 1rem;
     }
 }
