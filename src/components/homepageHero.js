@@ -1,6 +1,6 @@
 import React from "react"
 
-import heroStyles from "../styles/layout/hero.module.css"
+import heroStyles from "../styles/layout/homepage-hero.module.css"
 import Button from "./button"
 import Container from "./container"
 import IDEHero from "./ide-hero"

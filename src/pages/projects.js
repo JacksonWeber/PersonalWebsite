@@ -1,20 +1,23 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import ContainerlessLayout from "../components/layoutContainerless"
 import SEO from "../components/seo"
 import ProjectCard from "../components/projectCard"
-import RowsByColumns from "../components/uitls/RowsByColumns"
+import RowsByColumns from "../components/utils/RowsByColumns"
+import ProjectsHero from "../components/projectsHero"
+import Container from "../components/container"
 
 const Projects = ({ data }) => (
-<Layout>
+<ContainerlessLayout>
   <SEO title="Projects" />
-  <h1>Projects</h1>
-
-  <RowsByColumns columns={2}
-                 data={ data.allNodeProject.edges }
-                 render={ data => <ProjectCard node={ data.node }/> }/>
-</Layout>
+  <ProjectsHero/>
+  <Container>
+    <RowsByColumns columns={2}
+                   data={ data.allNodeProject.edges }
+                   render={ data => <ProjectCard node={ data.node }/> }/>
+  </Container>
+</ContainerlessLayout>
 )
 
 export default Projects

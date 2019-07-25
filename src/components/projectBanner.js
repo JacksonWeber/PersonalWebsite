@@ -1,11 +1,11 @@
 import React from "react"
 import { Link } from "gatsby"
-import { mdiConsole, mdiGithubCircle } from "@mdi/js"
+import { mdiConsole } from "@mdi/js"
 
 import Container from "./container"
 import ProjectCard from "../components/projectCard"
 import bannerStyles from "../styles/layout/project-banner.module.css"
-import RowsByColumns from "./uitls/RowsByColumns"
+import RowsByColumns from "./utils/RowsByColumns"
 import Icon from "@mdi/react"
 
 const Banner = ({ data }) => (
