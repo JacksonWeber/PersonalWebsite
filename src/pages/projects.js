@@ -13,7 +13,7 @@ const Projects = ({ data }) => (
     <SEO title="Projects" />
     <ProjectsHero data={ data.allTaxonomyTermAdministrativeTags.edges[0].node.relationships.node__project[0] } />
     <Container>
-      <RowsByColumns columns={2}
+      <RowsByColumns columns={ 2 }
                      data={ data.allNodeProject.edges }
                      render={ data => <ProjectCard node={ data.node }/> }/>
     </Container>

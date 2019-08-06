@@ -19,7 +19,8 @@ const Banner = ({ data }) => (
                      render={ data => <ProjectCard node={ data.node }/> }/>
 
      <div className={ bannerStyles.buttonWrapper }>
-        <Link className={ bannerStyles.button } to="/projects">
+        <Link className={ bannerStyles.button }
+              to="/projects/">
           <Icon path={ mdiConsole } size={ "1rem" }/>
           See More Projects
         </Link>

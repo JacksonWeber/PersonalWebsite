@@ -11,7 +11,7 @@ const ProjectHero = ({ data }) => (
         <h3>
           Featured Project
         </h3>
-        <div>
+        <div className={ heroStyles.cardWrapper }>
           <ProjectCard node={ data }/>
         </div>
       </div>
