@@ -1,19 +1,24 @@
 import React from "react"
 import { graphql } from "gatsby"
 
-import Layout from "../components/layout"
+import ContainerlessLayout from "../components/layoutContainerless"
 import SEO from "../components/seo"
 import Teaser from "../components/teaser"
+import Container from "../components/container"
+import RowsByColumns from "../components/utils/RowsByColumns"
+import NotesHero from "../components/notesHero"
 
 const Notes = ({ data }) => (
-  <Layout>
+  <ContainerlessLayout>
     <SEO title="Notes" />
-    <h1>Notes</h1>
+    <NotesHero/>
 
-    { data.allNodeNote.edges.map(({ node }, index) => (
-        <Teaser data={ node }/>
-      ))}
-  </Layout>
+    <Container>
+      <RowsByColumns columns={ 2 }
+                     data={ data.allNodeNote.edges }
+                     render={ data => <Teaser data={ data.node }/> }/>
+    </Container>
+  </ContainerlessLayout>
 )
 
 export default Notes

@@ -17,7 +17,6 @@ const ProjectCard = (data) => {
           <Img className={ cardStyles.cardImage } fluid={ node.relationships.field_languages[0].relationships.field_image.localFile.childImageSharp.fluid }/>
         </div>
       </div>
-      <div className={ cardStyles.projectSubheader }/>
       <div className={ cardStyles.projectDescription }>
         { node.body.value }
       </div>
