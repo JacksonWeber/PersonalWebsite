@@ -6,7 +6,9 @@
     margin-bottom: 3rem;
 }
 
-.bar svg {
+.iconWrapper {
+    display: flex;
+    justify-content: center;
     fill: white;
 }
 
@@ -18,9 +20,11 @@
 }
 
 .buttonWrapper {
+    display: flex;
+    justify-content: center;
+
     flex-grow: 1;
     margin-bottom: 2rem;
-    margin-left: 6.5rem;
 }
 
 .buttonWrapper a {

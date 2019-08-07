@@ -13,7 +13,9 @@ const SourceBar = () => (
       <h3 className={ sourceBarStyles.text } >
         This Website is Open Source
       </h3>
-      <Icon path={ mdiGatsby } size={ "20rem" }/>
+      <div className={ sourceBarStyles.iconWrapper }>
+        <Icon path={ mdiGatsby } size={ "20rem" }/>
+      </div>
       <div className={ sourceBarStyles.buttonWrapper }>
         <Button href="https://github.com/JacksonWeber" target={ "_blank" }>
           <Icon path={ mdiGithubCircle } size={ "1rem" }/>
