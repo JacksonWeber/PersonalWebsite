@@ -19,4 +19,8 @@
     .row {
         flex-direction: row;
     }
+
+    .isHalf {
+        max-width: 50%;
+    }
 }

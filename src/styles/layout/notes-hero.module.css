@@ -16,5 +16,19 @@
 
 .cardWrapper article {
     background: #282C34;
-    color: white
+    color: white;
+    flex-direction: row;
+}
+
+.cardWrapper article > div:first-child {
+    max-width: 180px;
+}
+
+.cardWrapper article h2 {
+    color: white;
+    text-decoration: none;
+}
+
+.cardWrapper article a:hover {
+    text-decoration: none;
 }

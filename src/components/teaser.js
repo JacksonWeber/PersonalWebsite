@@ -4,22 +4,25 @@ import Img from "gatsby-image"
 
 import teaserStyles from "../styles/layout/notes-teaser.module.css"
 
-const Teaser = ({ data }) => (
+const Teaser = (data) => {
+  let node = data.node;
+
+  return (
   <article className={ teaserStyles.teaserBox }>
     <div className={ teaserStyles.teaserImageWrapper }>
-      <Img className={ teaserStyles.teaserImage } fluid={ data.relationships.field_image[0].localFile.childImageSharp.fluid } />
+      <Img className={ teaserStyles.teaserImageWrapper } fluid={ node.relationships.field_image[0].localFile.childImageSharp.fluid } />
     </div>
     <div className={ teaserStyles.teaserContent }>
-      <Link className={ teaserStyles.teaserLink } to={ data.path.alias }>
+      <Link className={ teaserStyles.teaserLink } to={ node.path.alias }>
         <h2>
-          { data.title }
+          { node.title }
         </h2>
       </Link>
       <p>
-        { data.body.summary }
+        { node.body.summary }
       </p>
     </div>
   </article>
-)
+)}
 
 export default Teaser

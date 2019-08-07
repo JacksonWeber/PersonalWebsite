@@ -11,47 +11,74 @@ import NotesHero from "../components/notesHero"
 const Notes = ({ data }) => (
   <ContainerlessLayout>
     <SEO title="Notes" />
-    <NotesHero/>
+    <NotesHero data={ data.featured.edges[0].node }/>
 
     <Container>
       <RowsByColumns columns={ 2 }
-                     data={ data.allNodeNote.edges }
-                     render={ data => <Teaser data={ data.node }/> }/>
+                     data={ data.notFeatured.edges }
+                     render={ data => <Teaser node={ data.node }/> }/>
     </Container>
   </ContainerlessLayout>
 )
 
 export default Notes
 
-export const query = graphql`  
-  query {
-    allNodeNote (sort: { fields: [created], order: DESC }){
-      edges {
-        node {
-          path {
-            alias
-          }
-          title
-            created(formatString: "DD MMMM, YYYY")
-          body {
-            value
-            format
-            processed
-            summary
-          }
-          relationships {
-            field_image {
-              localFile {
-                childImageSharp {
-                  fluid(maxWidth: 1024, maxHeight: 1024) {
-                    ...GatsbyImageSharpFluid
-                  }
+export const query = graphql`
+    query {
+        featured: allNodeNote(filter: {relationships: {field_administrative_tag: {elemMatch: {name: {eq: "Featured"}}}}}) {
+            edges {
+                node {
+                    path {
+                        alias
+                    }
+                    title
+                        created(formatString: "DD MMMM, YYYY")
+                    body {
+                        value
+                        format
+                        summary
+                    }
+                    relationships {
+                        field_image {
+                            localFile {
+                                childImageSharp {
+                                    fluid(maxWidth: 1024, maxHeight: 1024) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                    }
                 }
-              }
             }
-          }
         }
-      }
+
+        notFeatured: allNodeNote(filter: {relationships: {field_administrative_tag: {elemMatch: {name: {ne: "Featured"}}}}}) {
+            edges {
+                node {
+                    path {
+                        alias
+                    }
+                    title
+                        created(formatString: "DD MMMM, YYYY")
+                    body {
+                        value
+                        format
+                        summary
+                    }
+                    relationships {
+                        field_image {
+                            localFile {
+                                childImageSharp {
+                                    fluid(maxWidth: 1024, maxHeight: 1024) {
+                                        ...GatsbyImageSharpFluid
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
-  }
 `
