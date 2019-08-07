@@ -5,12 +5,14 @@ import ContainerlessLayout from "../components/layoutContainerless"
 import SEO from "../components/seo"
 import Hero from "../components/homepageHero"
 import Banner from "../components/projectBanner"
+import SourceBar from "../components/sourceBar"
 
 const IndexPage = ({ data }) => (
     <ContainerlessLayout>
       <SEO title="Home" />
       <Hero/>
       <Banner data={ data.allNodeProject.edges }/>
+      <SourceBar/>
     </ContainerlessLayout>
   )
 

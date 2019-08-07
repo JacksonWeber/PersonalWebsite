@@ -1,0 +1,29 @@
+.bar {
+    display: flex;
+    min-height: 250px;
+    background: #744B8F;
+
+    margin-bottom: 3rem;
+}
+
+.bar svg {
+    fill: white;
+}
+
+.text {
+    margin-top: 1rem;
+    color: white;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.buttonWrapper {
+    flex-grow: 1;
+    margin-bottom: 2rem;
+    margin-left: 6.5rem;
+}
+
+.buttonWrapper a {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
