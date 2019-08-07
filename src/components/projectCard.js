@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
 
-import Button from "./button.js"
 import cardStyles from "../styles/layout/project-card.module.css"
 
 const ProjectCard = (data) => {
@@ -21,9 +20,6 @@ const ProjectCard = (data) => {
         { node.body.value }
       </div>
       <div className={ cardStyles.spacer }/>
-      <div className={ cardStyles.buttonWrapper }>
-        <Button href={ node.field_link[0].uri } target={ "_blank" }>{ node.field_link[0].title }</Button>
-      </div>
     </article>
 )}
 
