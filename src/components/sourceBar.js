@@ -17,7 +17,7 @@ const SourceBar = () => (
         <Icon path={ mdiGatsby } size={ "20rem" }/>
       </div>
       <div className={ sourceBarStyles.buttonWrapper }>
-        <Button href="https://github.com/JacksonWeber" target={ "_blank" }>
+        <Button href="https://github.com/JacksonWeber/PersonalWebsite" target={ "_blank" }>
           <Icon path={ mdiGithubCircle } size={ "1rem" }/>
           Source
         </Button>
