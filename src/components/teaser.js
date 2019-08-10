@@ -18,9 +18,9 @@ const Teaser = (data) => {
           { node.title }
         </h2>
       </Link>
-      <p>
-        { node.body.summary }
-      </p>
+      <div>
+        { node.created }
+      </div>
     </div>
   </article>
 )}

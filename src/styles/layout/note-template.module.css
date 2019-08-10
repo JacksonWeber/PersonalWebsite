@@ -1,8 +1,30 @@
+.headerWrapper {
+    text-align: center;
+}
+
 .noteImage {
-    width: 150px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
     margin-bottom: 2rem;
+
+    border-radius: 10px;
+}
+
+.title {
+    color: #363636;
 }
 
 .noteInformation {
     margin-bottom: 2rem;
+}
+
+.body h2 {
+    color: #363636;
+}
+
+.body {
+    line-height: 1.5rem;
+    color: #4A4A4A;
 }

@@ -23,6 +23,10 @@
     padding: 0.5rem;
 }
 
+.header {
+    color: #363636;
+}
+
 .buttonStyle {
     background-color: #626A73;
     color: #282C34;

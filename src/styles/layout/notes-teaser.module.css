@@ -26,10 +26,19 @@
     box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
 }
 
+.teaserLink h2 {
+    margin: 0;
+}
+
 .teaserContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
     padding: 1rem;
 }
 
 .teaserImageWrapper {
-    width: 100%
+    border-radius: 5px;
+    width: 100%;
+    overflow: hidden;
 }

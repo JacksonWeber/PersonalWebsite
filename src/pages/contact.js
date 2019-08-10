@@ -8,7 +8,7 @@ import ideStyles from "../styles/layout/ide-hero.module.css"
 const Contact = () => (
   <Layout>
     <SEO title="Contact" />
-    <h1>Contact Me</h1>
+    <h1 className={ contactStyles.header }>Contact Me</h1>
 
     <form name="contact" method="POST" action={ "/submission" } data-netlify="true">
       <input type={"hidden"} name={ "form-name" } value={"contact"}/>
