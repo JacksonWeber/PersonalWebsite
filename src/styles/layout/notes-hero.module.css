@@ -17,11 +17,7 @@
 .cardWrapper article {
     background: #282C34;
     color: white;
-    flex-direction: row;
-}
-
-.cardWrapper article > div:first-child {
-    max-width: 180px;
+    flex-direction: column;
 }
 
 .cardWrapper article h2 {
@@ -31,4 +27,14 @@
 
 .cardWrapper article a:hover {
     text-decoration: none;
+}
+
+@media (min-width: 610px) {
+    .cardWrapper article {
+        flex-direction: row;
+    }
+
+    .cardWrapper article > div:first-child {
+        max-width: 180px;
+    }
 }

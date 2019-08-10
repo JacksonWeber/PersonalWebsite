@@ -12,8 +12,11 @@
 
 .buttonWrapper {
     display: flex;
-
     justify-content: center;
+
+    margin-left: auto;
+    margin-right: auto;
+
     margin-bottom: 2rem;
 }
 
@@ -21,34 +24,7 @@
     margin-bottom: 1rem;
 }
 
-.button {
-    display: flex;
-
-    width: 25%;
-
-
-    border-radius: 5px;
-    padding: 0.5rem;
-
-    background-color: #649E71;
-
+.link {
     text-decoration: none;
     color: white;
-}
-
-.button:hover,
-.button:focus {
-    background-color: #dfdfdf;
-    box-shadow: 10px 10px 20px 0px rgba(0,0,0,0.04),-10px 0 20px 0px rgba(0,0,0,0.04);
-    color: #649E71;
-}
-
-.button svg {
-    fill: white;
-    margin-top: .1rem;
-    margin-right: 2rem;
-}
-
-.button:hover svg path {
-    fill: #649E71;
 }

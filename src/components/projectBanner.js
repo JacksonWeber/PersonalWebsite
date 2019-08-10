@@ -1,7 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 import { mdiConsole } from "@mdi/js"
 
+import Button from "./button"
 import Container from "./container"
 import ProjectCard from "../components/projectCard"
 import bannerStyles from "../styles/layout/project-banner.module.css"
@@ -12,19 +12,18 @@ const Banner = ({ data }) => (
   <div className={ bannerStyles.banner }>
     <Container>
       <h3 className={ bannerStyles.text }>
-      Featured Projects
+        Featured Projects
       </h3>
-      <RowsByColumns columns={2}
+      <RowsByColumns columns={ 2 }
                      data={ data }
                      render={ data => <ProjectCard node={ data.node }/> }/>
 
-     <div className={ bannerStyles.buttonWrapper }>
-        <Link className={ bannerStyles.button }
-              to="/projects/">
+      <div className={ bannerStyles.buttonWrapper }>
+        <Button href="/projects/" internal={ true }>
           <Icon path={ mdiConsole } size={ "1rem" }/>
           See More Projects
-        </Link>
-     </div>
+        </Button>
+      </div>
     </Container>
   </div>
 )
