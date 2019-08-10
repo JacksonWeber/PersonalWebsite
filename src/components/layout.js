@@ -13,6 +13,7 @@ const Layout = ({ children }) => (
     <Header/>
     <Container>
       <main>{ children }</main>
+      <div className={ footerStyles.footerLine }/>
       <footer>
         <div className={ footerStyles.footerGroup }>
           <span className={ footerStyles.spacer }>© { new Date().getFullYear() } Jackson Weber</span>

@@ -11,10 +11,21 @@
 }
 
 .footerGroup {
+    margin-top: 1rem;
+    padding-bottom: 1rem;
+
     display: flex;
     flex-direction: row;
 }
 
 .spacer {
     flex-grow: 1;
+}
+
+.footerLine {
+    border-top: 1px solid #4240CC;
+
+    margin-top: 2rem;
+    margin-left: -2rem;
+    margin-right: -2rem;
 }

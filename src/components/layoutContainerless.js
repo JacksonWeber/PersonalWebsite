@@ -13,6 +13,7 @@ const ContainerlessLayout = ({ children }) => (
     <Header/>
       <main>{ children }</main>
       <Container>
+        <div className={ footerStyles.footerLine }/>
         <footer>
           <div className={ footerStyles.footerGroup }>
             <span className={ footerStyles.spacer }>© { new Date().getFullYear() } Jackson Weber</span>
