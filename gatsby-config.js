@@ -5,6 +5,7 @@ module.exports = {
     title: `Jackson Weber`,
     description: `A collection of my personal work.`,
     author: `jackson.b.weber@icloud.com`,
+    siteUrl: `https://jackson-weber.netlify.com/`,
   },
   plugins: [
     {
@@ -17,7 +18,7 @@ module.exports = {
         }
       }
     },
-
+    `gatsby-plugin-advanced-sitemap`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
