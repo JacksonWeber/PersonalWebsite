@@ -1,7 +1,7 @@
 .hero {
     min-height: 175px;
     background-color: #4240CC;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .header {
@@ -16,5 +16,5 @@
 
 .cardWrapper article {
     background: #282C34;
-    color: white
+    color: white;
 }
