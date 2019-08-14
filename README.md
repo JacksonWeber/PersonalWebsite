@@ -1,7 +1,7 @@
 Jackson  Weber Personal Website and Portfolio
 =============================================
 
-The Website is available at: https://jackson-weber.netlify.com/
+The Website is available at: https://jackson-weber.com
 ---------------------------------------------------------------
 
 About the Site
