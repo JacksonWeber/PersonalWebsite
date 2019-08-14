@@ -5,7 +5,7 @@ module.exports = {
     title: `Jackson Weber`,
     description: `A collection of my personal work.`,
     author: `jackson.b.weber@icloud.com`,
-    siteUrl: `https://jackson-weber.netlify.com/`,
+    siteUrl: `https://jackson-weber.com/`,
   },
   plugins: [
     {
