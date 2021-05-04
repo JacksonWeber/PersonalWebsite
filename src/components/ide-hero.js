@@ -35,19 +35,19 @@ class IDEHero extends React.Component {
           <div style={{ 'margin-left': '1.5rem' }}>
             <span style={{ color: '#61AEEF' }}>{ 'printf' }</span>
             <span style={{ color: '#86909C' }}>{ '(' }</span>
-            <span style={{ color: '#98C379' }}>{ '"I\'m a full-stack developer passionate about web technologies and UI/UX"' }</span>
+            <span style={{ color: '#98C379' }}>{ '"I\'m a full-stack developer passionate about web technologies, UI/UX,' }</span>
             <span style={{ color: '#86909C' }}>{ ');' }</span>
           </div>
           <div style={{ 'margin-left': '1.5rem' }}>
             <span style={{ color: '#61AEEF' }}>{ 'printf' }</span>
             <span style={{ color: '#86909C' }}>{ '(' }</span>
-            <span style={{ color: '#98C379' }}>{ '"but I also love low-level programming and systems"' }</span>
+            <span style={{ color: '#98C379' }}>{ '"eCommerce, and backend development!"' }</span>
             <span style={{ color: '#86909C' }}>{ ');' }</span>
           </div>
           <div style={{ 'margin-left': '1.5rem' }}>
             <span style={{ color: '#61AEEF' }}>{ 'printf' }</span>
             <span style={{ color: '#86909C' }}>{ '(' }</span>
-            <span style={{ color: '#98C379' }}>{ '"and have experience with ERP backend development and e-commerce"' }</span>
+            <span style={{ color: '#98C379' }}>{ '"And some low-level programming and systems sprinkled in there for fun.' }</span>
             <span style={{ color: '#86909C' }}>{ ');' }</span>
           </div>
           <div style={{ 'margin-left': '1.5rem' }}>
