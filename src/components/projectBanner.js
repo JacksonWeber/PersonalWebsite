@@ -12,7 +12,7 @@ const Banner = ({ data }) => (
   <div className={ bannerStyles.banner }>
     <Container>
       <h3 className={ bannerStyles.text }>
-        Featured Projects
+        Recent Projects
       </h3>
       <RowsByColumns columns={ 2 }
                      data={ data }
